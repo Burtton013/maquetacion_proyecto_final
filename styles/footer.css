@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+footer {
+    color: #fff;
+    background-color: #b79b77;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff !important;
+    text-decoration: underline 2px #fff;
+}
+
+p {
+    font-size: 17px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #fff;
+}
+#inpt-registro{
+width: auto;
+ 
+}
+#btn-registro{
+   color: #fff;
+   background-color: #5F374B;
+   border: solid 1px #5F374B;
+   margin-top: 5px;
+}
+@media(max-width: 570px){
+    #inpt-registro{
+        width: 320px;
+    }
+}

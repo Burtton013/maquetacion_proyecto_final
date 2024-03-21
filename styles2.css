@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#logo{
+    width:200px;
+    height: 60px;
+}
+
+#link-item a{
+    /* margin-right: 150px; */
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+#link-item a:hover{
+    text-decoration: underline 3px #b79b77;
+}
+
+#btn-buscar{
+    color: #fff;
+    background-color: #b79b77;
+    border: solid 1px #b79b77;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.section-1{
+   color: #fff;
+     
+}
+
+.banner_main-page img{
+    width: 20%;
+    height: 250px;
+    
+}
+
+#text-1{
+    font-size: 60px;
+    position: absolute;
+    top: 100px;
+    right: 450px;
+}
+
+#text-2{
+    font-size: 40px;
+    position: absolute;
+    top: 300px;
+    right: 600px;
+}
