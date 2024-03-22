@@ -5,11 +5,190 @@
 }
 
 body {
-    padding: 10px;
-    width: 100%;
-    height: 100vh;
+    padding: 5px;
+    /* height: 100vh; */
+
 }
-main{
-    border: solid red 2px;
-    height: 1000px;
+
+/*----------------------------------NAVBAR-------------------------------------*/
+
+nav {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 200px;
+    height: 60px;
+}
+
+#link-item a {
+    /* margin-right: 150px; */
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+#link-item a:hover {
+    text-decoration: underline 3px #b79b77;
+}
+
+#btn-buscar {
+    
+    color: #fff;
+    background-color: #b79b77;
+    border: solid 1px #b79b77;
+}
+
+
+/*----------------------------------MAIN/BANNER-------------------------------------*/
+
+#banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(./sources/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+#banner h1{
+    color: white;
+    font-size: 50px;
+    position: absolute; /* Se posiciona absolutamente dentro de #banner */
+    top: 200px;
+    backdrop-filter: blur(2px);
+}
+
+#banner h6 {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    position: absolute; /* Se posiciona absolutamente dentro de #banner */
+    top: 350px;
+    backdrop-filter:  blur(2px);
+}
+#img-banner {
+    width: 100%;
+    height: 400px;
+}
+
+/*----------------------------------MAIN/ARTICLE-------------------------------------*/
+#article-card{
+    width: 100%;
+    border: solid 1px #fff;
+    justify-content: center; 
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+#article-card h2,#article-card h4{
+    color:#5F374B;
+}
+#card-texto{
+    width: 50%;
+}
+/* #img-article{
+    width: 30%;
+} */
+
+#img-article img{
+width: 100%;
+
+}
+
+
+
+/*----------------------------------FOOTER-------------------------------------*/
+
+footer {
+    color: #fff;
+    background-color: #b79b77;
+}
+
+p {
+    font-size: 17px;
+}
+
+#a-contacto a,
+#a-info a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+}
+
+#a-contacto a:hover,
+#a-info a:hover {
+    color: #fff;
+    text-decoration: underline 2px #fff;
+}
+
+
+#a-copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#a-copyright a:hover {
+    color: #fff;
+    text-decoration: underline 2px #fff;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #fff;
+}
+
+#inpt-registro {
+    width: auto;
+
+}
+
+#btn-registro {
+    color: #fff;
+    background-color: #5F374B;
+    border: solid 1px #5F374B;
+    margin-top: 5px;
+}
+
+/*----------------------------------MEDIAQUERY-------------------------------------*/
+
+@media(max-width: 576px), (max-width: 768px), (max-width: 992px)  {
+    #inpt-registro {
+        width: 100%;
+    }
+    
+    #banner h1{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+    left:70px;
+    text-align: center;
+    backdrop-filter:  blur(2px);
+    }
+
+    #banner h6{
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        position: relative;
+        top: 80px;
+        left: -135px;
+        text-align: center;
+        backdrop-filter:  blur(2px);
+        }
+
+        #article-card{
+            width: 100%;
+            justify-content: center; 
+            text-align: center;
+}
+
+
 }
