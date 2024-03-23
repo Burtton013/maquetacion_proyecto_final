@@ -5,22 +5,254 @@
 }
 
 body {
-    padding: 10px;
+    padding: 5px;
+    /* height: 100vh; */
+
+}
+
+/*----------------------------------NAVBAR-------------------------------------*/
+
+nav {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 200px;
+    height: 60px;
+}
+
+#link-item a {
+    /* margin-right: 150px; */
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+#link-item a:hover {
+    text-decoration: underline 2px #b79b77;
+}
+
+#btn-buscar {
+    
+    color: #fff;
+    background-color: #b79b77;
+    border: solid 1px #b79b77;
+}
+
+
+/*----------------------------------MAIN/BANNER-------------------------------------*/
+
+#banner {
     width: 100%;
-    height: 100vh;
+    height: 400px;
+    background-image: url(./sources/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+} 
+#banner h1{
+    color: white;
+    font-size: 50px;
+    position: absolute; 
+    top: 200px;
+    backdrop-filter: blur(2px);
 }
 
-.navbar {
-    width: 100% !important;
+#banner h6 {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    position: absolute;
+    top: 350px;
+    backdrop-filter:  blur(2px);
+}
+#img-banner {
+    width: 100%;
+    height: 400px;
+}
+
+/*----------------------------------MAIN/RECOMENDACIONES-------------------------------------*/
+
+.recomendados{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #5F374B;
 
 }
-main{
-    height: 1000px;
-    border: solid red 2px;
+.card-body{
+    flex-direction: column;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 15px;
 }
-.footer {
-    width: 100% !important;
-   
+#btn-recomendacion{
+    background-color: #5F374B;
+    border: solid 1px #5F374B;
+}
+#btn-recomendacion:hover{
+    background-color: #5F374BCC;
+    border: solid 2px #5F374BCC;
+}
+/*----------------------------------MAIN/CARRUSEL-------------------------------------*/
+.text-carousel{
+    color: #5F374B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#myCarousel {
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+     
+}
+.carousel-control-prev, .carousel-control-next {
+    
+    position: absolute;
+    transform: translateY(-1%);
+    height: 525px;
+    z-index: 1;
+    margin-right: -40px;
+    margin-left: -175px;
+}
+#myCarousel a {
+    background-color: #5F374B;
+    border: solid 1px #5F374B;
+}
+#myCarousel a:hover {
+    background-color: #5F374BCC;
+    border: solid 2px #5F374BCC;
+}
+
+/*----------------------------------MAIN/ARTICLE-------------------------------------*/
+#article-card{
+    width: 100%;
+    justify-content: center; 
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#article-card h2,#article-card h4{
+    color:#5F374B;
+}
+#card-texto{
+    width: 50%;
+}
+/* #img-article{
+    width: 30%;
+} */
+
+#img-article img{
+width: 100%;
+
+}
+
+
+/*----------------------------------FOOTER-------------------------------------*/
+
+footer {
+    color: #fff;
+    background-color: #b79b77;
+}
+
+p {
+    font-size: 17px;
+}
+
+#a-contacto a,
+#a-info a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+}
+
+#a-contacto a:hover,
+#a-info a:hover {
+    color: #fff;
+    text-decoration: underline 2px #fff;
+}
+
+
+#a-copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#a-copyright a:hover {
+    color: #fff;
+    text-decoration: underline 2px #fff;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #fff;
+}
+
+#inpt-registro {
+    width: auto;
+
+}
+
+#btn-registro {
+    color: #fff;
+    background-color: #5F374B;
+    border: solid 1px #5F374B;
+    margin-top: 5px;
+}
+#btn-registro:hover {
+    color: #fff;
+    background-color: #5F374BCC;
+    border: solid 1px #5F374BCC;
     
 }
 
+/*----------------------------------MEDIAQUERY-------------------------------------*/
+
+@media(max-width: 576px), (max-width: 768px), (max-width: 992px)  {
+    #inpt-registro {
+        width: 100%;
+    }
+    #recomend-card{
+        width: 15rem;
+    }
+
+    #banner h1{
+        color: white;
+        font-size: 30px;
+        position: relative;
+        top: -60px;
+        left:70px;
+        text-align: center;
+        backdrop-filter:  blur(2px);
+    }
+
+    #banner h6{
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        position: relative;
+        top: 80px;
+        left: -135px;
+        text-align: center;
+        backdrop-filter:  blur(2px);
+        }
+
+    #article-card{
+        width: 100%;
+        justify-content: center; 
+        text-align: center;
+}
+
+
+}
